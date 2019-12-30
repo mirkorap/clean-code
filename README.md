@@ -1,6 +1,6 @@
 # Clean Code
 
-Questo book ha lo scopo di riassumere in breve tutte le best practices presenti all'interno del libro "Clean Code" di Robert C. Martin \(Uncle Bob\). Di seguito sono presenti le sezioni per ogni tipo di argomento trattato all'interno del libro.
+Questo book ha lo scopo di riassumere in breve tutte le best practices presenti all'interno del libro "Clean Code" di Robert C. Martin \(Uncle Bob\). Di seguito sono presenti le sezioni per ogni tipo di argomento trattato all'interno del libro
 
 ### Tabella dei contenuti
 
