@@ -4,7 +4,7 @@
 
 ### Commenti inappropriati
 
-Un commento non dovrebbe contenere informazioni inutili quali: le cronologie delle modifiche, l'autore del file, la data di creazione e di ultima modifica. Tutte queste informazioni, ormai, vengono salvate dai sistemi di controllo versione.
+Un commento non dovrebbe contenere informazioni inutili quali: la cronologia delle modifiche, l'autore del file, la data di creazione e di ultima modifica. Tutte queste informazioni, ormai, vengono salvate dai sistemi di controllo versione.
 
 ### Commenti obsoleti
 
@@ -34,7 +34,7 @@ I commenti devono essere scritti con attenzione. Non divagate. Non raccontate ov
 
 ### Codice commentato
 
-Il codice commentato se ne sta lì e "marcisce". Nessuno lo toccherà perché tutti penseranno che sia importante. Quando vedete del codice commentato, **cancellatelo!** Non temete: il sistema di controllo versione continuerà a ricordarlo.
+Il codice commentato se ne sta lì e "marcisce". Nessuno lo toccherà perché tutti penseranno che sia importante. Quando vedete del codice commentato, **cancellatelo!** Non temete, il sistema di controllo versione continuerà a ricordarlo.
 
 ## Ambiente
 
@@ -58,7 +58,7 @@ Gli argomenti passati per riferimento non sono intuitivi. Se la vostra funzione 
 
 ### Flag usati come argomenti
 
-Gli argomenti booleani dichiarano che la funzione fa più di una cosa. Questo perché ci porta ad avere all'interno della funzione, una condizione sia per quando il flag è `true` e sia per quando è `false`. Per tale ragione essi vanno evitati.
+Gli argomenti booleani dichiarano che la funzione fa più di una cosa. Questo perché ci porta ad avere all'interno della funzione una condizione sia per quando il flag è `true` e sia per quando è `false`. Per tale ragione essi vanno evitati.
 
 ```text
 public function render(bool $canFormat = false): string {
@@ -72,17 +72,17 @@ public function render(bool $canFormat = false): string {
 
 ### Funzioni "morte"
 
-I metodi che non vengono mai richiamati dovrebbero essere eliminati. Non temete: il sistema di controllo versione continuerà a ricordarli.
+I metodi che non vengono mai richiamati dovrebbero essere eliminati. Non temete, il sistema di controllo versione continuerà a ricordarli.
 
 ## Generali
 
 ### Più linguaggi in un file di codice sorgente
 
-Gli ambienti di programmazione di oggi consentono di inserire più linguaggi in un unico file di codice sorgente. Questo potrebbe essere fonte di confusione. Purtroppo, a volte, è necessario utilizzarne più di uno. Ma dovremmo cercare di ridurre al minimo i frammenti di altri linguaggi nel nostro file di codice sorgente.
+Gli ambienti di programmazione di oggi consentono di inserire più linguaggi in un unico file di codice sorgente. Questo potrebbe essere fonte di confusione. Purtroppo, a volte, è necessario utilizzarne più di uno, ma dovremmo cercare di ridurre al minimo i frammenti di altri linguaggi nel nostro file di codice sorgente.
 
 ### Non viene implementato un comportamento naturale
 
-Ogni funzione o classe dovrebbe implementare i comportamenti che un altro programmatore possa aspettarsi. Per esempio, considerate una funzione che traduce il nome di un giorno della settimana, in valore numerico:
+Ogni funzione o classe dovrebbe implementare i comportamenti che un altro programmatore possa aspettarsi. Per esempio, considerate una funzione che traduce il nome di un giorno della settimana in valore numerico:
 
 ```text
 $day = Day::stringToDay($dayName);
@@ -91,7 +91,7 @@ $day = Day::stringToDay($dayName);
 Ci aspetteremmo che:
 
 * La stringa "Monday" restituisca 1 \(si tratta del primo giorno della settimana\)
-* Venissero tradotte anche le abbreviazioni più comuni\(es.: lun, mar, mer...\)
+* Venissero tradotte anche le abbreviazioni più comuni \(es.: lun, mar, mer...\)
 * Non ci siano distinzioni tra maiuscole e minuscole
 
 ### Comportamento errato alle delimitazioni
@@ -180,7 +180,7 @@ public function getErrorsThenClear(): array {
 
 ### Offuscamento dello scopo
 
-Il codice deve essere il più possibile espressivo. Le espressioni al volo, la notazione ungherese e i numeri magici offuscano lo scopo del nostro codice.
+Il codice deve essere il più espressivo possibile. Le espressioni al volo, la notazione ungherese e i numeri magici offuscano lo scopo del nostro codice.
 
 ```text
 public function m_otCalc(): int {
@@ -190,7 +190,7 @@ public function m_otCalc(): int {
 
 ### Responsabilità mal collocate
 
-Una delle responsabilità più importanti di uno sviluppatore è la scelta di dove collocare il codice. Il codice dovrebbe essere collocato là dove chi legge si aspetta di trovarlo. Se dobbiamo creare la funzione per calcolare la paga settimanale di un lavoratore, la collochiamo all'interno della classe `Employee` o nella classe `EmployeePayCalculator` 
+Una delle responsabilità più importanti di uno sviluppatore è la scelta di dove collocare il codice. Il codice dovrebbe essere collocato là dove chi legge si aspetta di trovarlo. Se dobbiamo creare la funzione per calcolare la paga settimanale di un lavoratore, la collochiamo all'interno della classe `Employee` o nella classe `EmployeePayCalculator`?
 
 ### Modificatore static inappropriato
 
@@ -433,7 +433,7 @@ Abbiate un motivo per scegliere la struttura del vostro codice e assicuratevi ch
 Le condizioni di delimitazione sono difficili da comprendere. Incapsulatele in un solo luogo e **non** sparpagliatele in tutto il codice.
 
 ```text
-if ($level + 1 < count($tags) {
+if ($level + 1 < count($tags)) {
     $parts = new Parse($body, $tags, $level + 1);
     $body = null;
 }
@@ -487,7 +487,7 @@ Se avete una costante, come un default o un valore di configurazione, la quale �
 
 ### Evitate la navigazione transitiva
 
-Evitate di far conoscere ai vostri moduli l'intera mappa di nagivazione del sistema. Se il modulo A utilizza B e il modulo B utilizza C, non vogliamo che il modulo A conosca e utilizza C. Non vogliamo avere catene di chiamate come la seguente: `$a->getB()->getC()->doSomething();`. Questa è chiamata [_Legge di Demetra_](https://mirkorap16.gitbook.io/clean-code/oggetti-e-strutture#la-legge-di-demetra). Piuttosto vogliamo che i nostri moduli ci offrano direttamente ciò di cui abbiamo bisogno. Dovremmo semplicemente poter dire: `$a->doSomething();` 
+Evitate di far conoscere ai vostri moduli l'intera mappa di navigazione del sistema. Se il modulo A utilizza B e il modulo B utilizza C, non vogliamo che il modulo A conosca e utilizza C. Non vogliamo avere catene di chiamate come la seguente: `$a->getB()->getC()->doSomething();`. Questa è chiamata [_Legge di Demetra_](https://mirkorap16.gitbook.io/clean-code/oggetti-e-strutture#la-legge-di-demetra). Piuttosto vogliamo che i nostri moduli ci offrano direttamente ciò di cui abbiamo bisogno. Dovremmo semplicemente poter dire: `$a->doSomething();` 
 
 ## Nomi
 
