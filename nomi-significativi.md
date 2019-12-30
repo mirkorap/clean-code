@@ -19,7 +19,7 @@ $a = true;
 Esempio di buon nome:
 
 ```text
-daysSinceCreation = 12;
+$daysSinceCreation = 12;
 $flaggedCells = [];
 $isFlagged = true;
 ```
