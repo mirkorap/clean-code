@@ -194,7 +194,7 @@ Una delle responsabilità più importanti di uno sviluppatore è la scelta di do
 
 ### Modificatore static inappropriato
 
-`Math::max($a, $b)` è un buon metodo statico perché non opera su un'unica istanza. Sarebbe assurdo dover dire `new Math()->max($a, $b)` o `$a->max($b)`. Questo perché tutti i dati usati da `Math::max()` provengono dai suoi due argomenti e non da un "proprietario". In poche parole in nessun caso vogliamo che `Math::max()` sia polimorfica. Tuttavia a volte scriviamo funzioni statiche che non dovrebbero essere statiche:
+`Math::max($a, $b)` è un buon metodo statico perché non opera su un'unica istanza. Sarebbe assurdo dover dire `new Math()->max($a, $b)` o `$a->max($b)`. Questo perché tutti i dati usati da `Math::max()` provengono dai suoi due argomenti e non da un oggetto "proprietario". In poche parole in nessun caso vogliamo che `Math::max()` sia polimorfica. Tuttavia a volte scriviamo funzioni statiche che non dovrebbero essere statiche:
 
 ```text
 HourlyPayCalculator::calculate($employee, $overtimeRate);
