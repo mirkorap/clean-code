@@ -1,0 +1,21 @@
+# Table of contents
+
+* [Clean Code](README.md)
+* [Nomi significativi](nomi-significativi.md)
+* [Oggetti e strutture](oggetti-e-strutture.md)
+* [esempi](esempi/README.md)
+  * [Args](esempi/args.md)
+  * [ComparisonCompactor](esempi/comparisoncompactor.md)
+  * [PrimePrinter](esempi/primeprinter.md)
+  * [PrimeGenerator](esempi/primegenerator.md)
+* [Funzioni](funzioni.md)
+* [Gestione degli errori](gestione-degli-errori.md)
+* [Unit test](unit-test.md)
+* [Avvertenze ed euristiche](avvertenze-ed-euristiche.md)
+* [Simple Design](simple-design.md)
+* [Delimitazioni](delimitazioni.md)
+* [Formattazione](formattazione.md)
+* [Classi](classi.md)
+* [Commenti](commenti.md)
+* [Sistemi](sistemi.md)
+
