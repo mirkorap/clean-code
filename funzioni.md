@@ -30,7 +30,7 @@ In ordine questa funzione fa tre cose:
  - In caso affermativo, include attacchi e chiusure
  - Esegue il rendering della pagina HTML
 
-Apparentemente questa funzione fa tre cose, ma notare come questi passi si trovano ad un solo livello di astrazione da quello che è il nome della funzione. In generale, una funzione fa una cosa sola quando i passi della funzione si trovano ad un solo livello di astrazione da quello che è il nome scelto per la funzione. Un altro modo per capire se una funzione sta facendo più di una cosa, è scoprire se riuscite ad estrarre un'altra funzione con un nome che non è semplicemente una riaffermazione della sua implementazione.
+Apparentemente questa funzione fa tre cose, ma notate come questi passi si trovano ad un solo livello di astrazione da quello che è il nome della funzione. In generale, una funzione fa una cosa sola quando i passi della funzione si trovano ad un solo livello di astrazione da quello che è il nome scelto per la funzione. Un altro modo per capire se una funzione sta facendo più di una cosa, è scoprire se riuscite ad estrarre un'altra funzione con un nome che non è semplicemente una riaffermazione della sua implementazione.
 
 ### Sezioni all'interno delle funzioni
 
@@ -101,7 +101,7 @@ Una funzione non dovrebbe avere più di tre argomenti. Gli argomenti in una funz
 
 Le funzioni con un solo argomento \(monadica\) vengono usate o per fare una domanda relativa a tale argomento: `isFileExists("test.txt")` o per operare su tale argomento: `fileOpen("test.txt")`. Un caso eccezionale sono gli eventi, dove a fronte di un argomento di input non c'è alcun valore restituito.
 
-### Evitare i flag come argomenti
+### Evitate i flag come argomenti
 
 I flag come argomenti sono da evitare, in quanto è sintomo che la funzione non fa una cosa sola. Fai X se il flag è `true` altrimenti fai Y.
 
@@ -179,7 +179,7 @@ Le funzioni non devono avere effetti collaterali. Se una funzione dice di fare X
 
 ### Argomenti di output
 
-Evitare gli argomenti di output, in quanto sono brutti e difficili da leggere. Se la funzione deve modificare lo stato, lo deve fare per l'oggetto a cui appartiene.
+Evitate gli argomenti di output, in quanto sono brutti e difficili da leggere. Se la funzione deve modificare lo stato, lo deve fare per l'oggetto a cui appartiene.
 
 Funzione da evitare:
 
