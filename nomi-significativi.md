@@ -4,7 +4,7 @@
 
 I nomi sono dappertutto nel software \(variabili, funzioni, argomenti, classi, istanze, file, cartelle...\), per questo motivo è molto importante nominare bene le cose. Ecco delle semplici regole per scegliere dei buoni nomi.
 
-## Usare nomi "parlanti"
+## Usate nomi "parlanti"
 
 I nomi devono essere parlanti. Già dal nome deve essere chiaro il perchè esiste, cosa fa e come viene utilizzato ciò che state nominando.
 
