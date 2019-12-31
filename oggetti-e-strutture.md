@@ -73,6 +73,10 @@ interface Shape {
 
 class Square implements Shape {
     private $side;
+    
+    public function __construct(double $side) {
+        $this->side = $side;
+    }
 
     public function area(): double {
         return pow($this->side, 2);
@@ -82,6 +86,11 @@ class Square implements Shape {
 class Rectangle implements Shape {
     private $height;
     private $width;
+    
+    public function __construct(double $height, double $width) {
+        $this->height = $height;
+        $this->width = $width;
+    }
 
     public function area(): double {
         return $this->height * $this->width;
@@ -89,9 +98,13 @@ class Rectangle implements Shape {
 }
 
 class Circle implements Shape {
+    private const PI = 3.141592653589793;
     private $center;
     private $radius;
-    private const PI = 3.141592653589793;
+    
+    public function __construct(double $radius) {
+        $this->radius = $radius;
+    }
 
     public function area(): double {
         return pow($this->radius, 2) * self::PI;
