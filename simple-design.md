@@ -1,6 +1,6 @@
 # Simple Design
 
-Esistono quattro semplici regole che ci consentono di scrivere del codice pulito. Queste regole descritte per la prima volta da Kent Beck in **Simple Design** dicono che un progetto è semplice se:
+Esistono quattro semplici regole che ci consentono di scrivere del codice pulito. Queste regole, descritte per la prima volta da Kent Beck in **Simple Design**, ci dicono che un progetto è semplice se:
 
 * Passa tutti i test
 * Non contiene duplicazioni
@@ -15,7 +15,7 @@ Un sistema che ha il 90% del codice coperto da test è un sistema collaudabile. 
 
 ### Regola 2 - Niente duplicazione
 
-Una volta che abbiamo i nostri test, possiamo rifattorizzare il codice senza alcun timore eliminando le duplicazioni presenti. La duplicazione è il nemico numero uno in un progetto, perché introduce rischi e complessità inutile al codice. Per eliminarla dobbiamo estrarre ad un livello minuto ciascun metodo, cosicché possiamo riconoscere un eventuale violazione del principio SRP, il quale ci porterà ad estrarre un ulteriore classe. Il pattern [**Template Method**](https://it.wikipedia.org/wiki/Template_method) è molto utilizzato per eliminare la duplicazione. 
+Una volta che abbiamo i nostri test, possiamo rifattorizzare il codice senza alcun timore eliminando le duplicazioni presenti. La duplicazione è il nemico numero uno in un progetto, perché introduce rischi e complica inutilmente il codice. Per eliminarla dobbiamo estrarre ad un livello minuto ciascun metodo, cosicché possiamo riconoscere un eventuale violazione del principio SRP, il quale ci porterà ad estrarre un ulteriore classe. Il pattern [**Template Method**](https://it.wikipedia.org/wiki/Template_method) è molto utilizzato per eliminare la duplicazione. 
 
 Prendiamo per esempio questa classe che si occupa di calcolare il numero di giorni di vacanza in base alla nazionalità del dipendente:
 
