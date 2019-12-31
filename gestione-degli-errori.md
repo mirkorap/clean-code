@@ -33,7 +33,7 @@ try {
 
 ### Definite le classi per le eccezioni in base alle esigenze
 
-Quando definiamo una classe per un'eccezione dobbiamo pensare al modo in cui essa può essere cachata e utilizzata. Spesso un'unica classe per eccezioni è sufficiente per distinguere una determinata area/situazione nel codice.
+Quando definiamo una classe per un'eccezione, dobbiamo pensare al modo in cui essa può essere cachata e utilizzata. Spesso un'unica classe per eccezioni è sufficiente per distinguere una determinata area/situazione nel codice.
 
 Utilizzo superfluo delle classi per le eccezioni:
 
@@ -43,7 +43,7 @@ if (empty($product->getName())) {
 }
 
 if ($product->getPrice() < 0) {
-    throw new InvalidProductPriceException();
+    throw new InvalidProducePriceException();
 }
 
 if (empty($product->getUrlKey())) {
@@ -81,7 +81,7 @@ class ExpenseReportDAO {
 }
 ```
 
-In questo caso, se il pasto viene consumato, diviene parte del totale, altrimenti il dipendente riceve una somma per tale giorno. Questo codice diventerebbe più semplice da leggere se gestissimo il caso speciale presente nel blocco `catch` attraverso una classe a parte \(SPECIAL CASE PATTERN\).
+In questo caso, se il pasto viene consumato, diviene parte del totale, altrimenti il dipendente riceve una somma per tale giorno. Questo codice diventa più semplice da leggere, se gestiamo il caso speciale presente nel blocco `catch` attraverso una classe a parte \(SPECIAL CASE PATTERN\).
 
 ```text
 $expenses = $expenseReportDAO->getMeals($employee->getId());
