@@ -39,7 +39,7 @@ class ReporterConfig {
 }
 ```
 
-Notare come i commenti sopra quelle proprietà, oltre ad essere inutili, spezzano la lettura. Senza quei commenti la classe risulterebbe più facile da leggere.
+Notate come i commenti sopra quelle proprietà, oltre ad essere inutili, spezzano la lettura. Senza quei commenti la classe risulterebbe più facile da leggere.
 
 ```text
 class ReporterConfig {
@@ -52,7 +52,7 @@ class ReporterConfig {
 
 ### Dichiarazione verticale
 
-Funzioni o variabili che sono strettamente correlate tra di loro, dovrebbero trovarsi vicine, così da evitare il _"salto"_ tra una funzione ed un'altra.
+Funzioni o variabili che sono strettamente correlate tra di loro dovrebbero trovarsi vicine, così da evitare il _"salto"_ tra una funzione ed un'altra.
 
 ### Dichiarazioni di variabili
 
