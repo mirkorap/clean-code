@@ -37,7 +37,7 @@ class NomeClasse {
 
 ### Le classi dovrebbero essere piccole!
 
-Cosa si intende per classe "piccola"? Con le funzioni abbiamo dato una definizione semplicemente contanto le righe di codice, con le classi invece dobbiamo usare un'altra metrica, ovvero la **responsabilità**. Una classe che presenta 70 metodi è senza dubbio una classe eccessivamente grande, ma la classe seguente secondo voi è piccola o grande?
+Cosa si intende per classe "piccola"? Con le funzioni abbiamo dato una definizione semplicemente contando le righe di codice, con le classi invece dobbiamo usare un'altra metrica, ovvero la **responsabilità**. Una classe che presenta 70 metodi è senza dubbio una classe eccessivamente grande, ma la classe seguente secondo voi è piccola o grande?
 
 ```text
 class SuperDashboard {
@@ -151,14 +151,14 @@ Aggiungere delle nuove funzionalità in un codice così strutturato diventa più
 
 ### Isolamento delle modifiche
 
-In OOP sappiamo che le classi concrete contengono i dettagli implementativi, mentre le classi astratte rappresentano solo i concetti. Una classe client dovrebbe dipendere dalle astrazioni e **non** dai dettagli concreti. Questo perché se tali dettagli dovessero cambiare, la classe client subirebbe dei "rischi" portati da questi cambiamenti. Dobbiamo cercare di isolare e disaccoppiare il nostro codice, in questo modo i cambiamenti apportati all'interno di una classe, non influiscono sul comportamento delle altre classi. Le nostre classi obbediranno così ad un altro principio [S.O.L.I.D](https://it.wikipedia.org/wiki/SOLID), ovvero il Dependency Inversion Principle \(DIP\). Il quale ci dice che le classi dovrebbero dipendere da astrazioni e non da dettagli concreti.
+In OOP sappiamo che le classi concrete contengono i dettagli implementativi, mentre le classi astratte rappresentano solo i concetti. Una classe client dovrebbe dipendere dalle astrazioni e **non** dai dettagli concreti. Questo perché se tali dettagli dovessero cambiare, la classe client subirebbe dei "rischi" portati da questi cambiamenti. Dobbiamo cercare di isolare e disaccoppiare il nostro codice, in questo modo i cambiamenti apportati all'interno di una classe non influiscono sul comportamento delle altre classi. Le nostre classi obbediranno così ad un altro principio [S.O.L.I.D](https://it.wikipedia.org/wiki/SOLID), ovvero il Dependency Inversion Principle \(DIP\). Il quale ci dice che le classi dovrebbero dipendere da astrazioni e non da dettagli concreti.
 
 ```text
 interface StockExchange {
     public function getCurrentPrice(string $symbol): Money;
 }
 
-class MilanStockExchange {
+class MilanStockExchange implements StockExchange {
     public function getCurrentPrice(string $symbol): Money { ... }
 }
 
