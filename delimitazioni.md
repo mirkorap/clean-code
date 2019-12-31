@@ -54,5 +54,5 @@ Capire come funziona un'API esterna è difficile. Integrare il codice esterno è
 
 ### Conclusioni
 
-Un buon progetto software si deve adattare ai cambiamenti \(sia interni che esterni\). Dovremmo evitare di far conoscere al nostro codice troppi dettagli del software esterno. E' meglio dipendere da qualcosa sotto il nostro controllo che da qualcosa che non possiamo controllare. L'utilizzo dell'Adapter Pattern ci aiuta ad eseguire la conversione dalla nostra interfaccia a quella fornita dal codice esterno.
+Un buon progetto software si deve adattare ai cambiamenti \(sia interni che esterni\). Dovremmo evitare di far conoscere al nostro codice troppi dettagli del software esterno. E' meglio dipendere da qualcosa sotto il nostro controllo che da qualcosa che non possiamo controllare. L'utilizzo dell'[Adapter Pattern](https://it.wikipedia.org/wiki/Adapter_pattern) ci aiuta ad eseguire la conversione dalla nostra interfaccia a quella fornita dal codice esterno.
 
