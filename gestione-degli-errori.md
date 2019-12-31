@@ -43,7 +43,7 @@ if (empty($product->getName())) {
 }
 
 if ($product->getPrice() < 0) {
-    throw new InvalidProducePriceException();
+    throw new InvalidProductPriceException();
 }
 
 if (empty($product->getUrlKey())) {
