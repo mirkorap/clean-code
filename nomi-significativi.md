@@ -2,11 +2,11 @@
 
 > There are only two hard things in Computer Science: cache invalidation and naming things.
 
-I nomi sono dappertutto nel software \(variabili, funzioni, argomenti, classi, istanze, file, cartelle...\), per questo motivo è molto importante nominare bene le cose. Ecco delle semplici regole per scegliere buoni nomi.
+I nomi sono dappertutto nel software \(variabili, funzioni, argomenti, classi, istanze, file, cartelle...\), per questo motivo è molto importante farlo bene. Ecco delle semplici regole per scegliere buoni nomi.
 
 ### Usare nomi "parlanti"
 
-I nomi devono essere parlanti. Già dal nome deve essere chiaro il perchè esiste, cosa fa e come viene utilizzato ciò che state nominando.
+I nomi devono essere parlanti. Già dal nome deve essere chiaro il perchè esiste, cosa fà e come viene utilizzato ciò che state nominando.
 
 Esempio di cattivo nome:
 
@@ -19,7 +19,7 @@ $a = true;
 Esempio di buon nome:
 
 ```text
-$daysSinceCreation = 12;
+daysSinceCreation = 12;
 $flaggedCells = [];
 $isFlagged = true;
 ```
@@ -78,7 +78,7 @@ interface ShapeFactory
 
 ### Nomi di classi
 
-Il nome di una classe non deve essere un verbo. Inoltre evitate parole come `Manager`, `Processor`, `Data` o `Info` che spesso vengono utilizzate solo per distinguere i nomi e non aggiungono altre informazioni su ciò che fa la classe.
+Il nome di una classe non deve essere un verbo. Inoltre evitate parole come `Manager`, `Processor`, `Data` o `Info` che spesso vengono utilizzate solo per distinguere i nomi e non aggiungono altre informazioni su ciò che fà la classe.
 
 ### Nomi di metodi
 
