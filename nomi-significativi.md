@@ -34,11 +34,11 @@ Usare due nomi uguali che si distinguono solo per un valore posto alla fine del 
 
 ## Usate nomi pronunciabili
 
-Evitare di dare nomi che siano difficili da pronunciare e di conseguenza da scrivere.
+Evitate di dare nomi che siano difficili da pronunciare e di conseguenza da scrivere.
 
 ## Usate nomi ricercabili
 
-I nomi devono essere anche facilmente ricercabili. Se usiamo nomi mono-lettera, quest'ultimi diventano impossibili da ricercare, poiché il risultato della ricerca darà migliaia di occorrenze. Evitare anche di usare magic numbers, meglio racchiuderli all'interno di costanti.
+I nomi devono essere anche facilmente ricercabili. Se usiamo nomi mono-lettera, quest'ultimi diventano impossibili da ricercare, poiché il risultato della ricerca darà migliaia di occorrenze. Evitate anche di usare magic numbers, meglio racchiuderli all'interno di costanti.
 
 Valore difficile da ricercare:
 
@@ -98,11 +98,11 @@ $fulcrumPoint = Complex::fromRealNumber(23.0);
 
 ## Una parola, un concetto
 
-Scegliere una parola per un determinato concetto astratto e continuarla ad utilizzarla per tutto il codice. Per esempio, non ha senso utilizzare `fetch`, `retrieve` e `get` per metodi equivalenti di classi differenti. Se ad esempio abbiamo utilizzato `add` per la somma di due valori, non usiamo lo stesso nome per inserire un elemento all'interno di una lista. Piuttosto utilizzare qualche altro nome tipo `insert` o `append`.
+Scegliete una parola per un determinato concetto astratto e continuatela ad utilizzarla per tutto il codice. Per esempio, non ha senso utilizzare `fetch`, `retrieve` e `get` per metodi equivalenti di classi differenti. Se ad esempio abbiamo utilizzato `add` per la somma di due valori, non usiamo lo stesso nome per inserire un elemento all'interno di una lista. Piuttosto utilizzate qualche altro nome tipo `insert` o `append`.
 
 ## Usate nomi appartenenti al dominio
 
-Cercare di utilizzare nomi appartenenti al dominio dell'applicazione.
+Cercate di utilizzare nomi appartenenti al dominio dell'applicazione.
 
 ## Aggiungere un contesto al nome
 
