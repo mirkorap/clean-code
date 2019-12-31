@@ -25,9 +25,10 @@ public function renderPageWithSetupsAndTeardowns() {
 ```
 
 In ordine questa funzione fa tre cose:
-    * Determina se è una pagina di test
-    * In caso affermativo, include attacchi e chiusure
-    * Esegue il rendering della pagina HTML
+
+ - Determina se è una pagina di test
+ - In caso affermativo, include attacchi e chiusure
+ - Esegue il rendering della pagina HTML
 
 Apparentemente questa funzione fa tre cose, ma notare come questi passi si trovano ad un solo livello di astrazione da quello che è il nome della funzione. In generale, una funzione fa una cosa sola quando i passi della funzione si trovano ad un solo livello di astrazione da quello che è il nome scelto per la funzione. Un altro modo per capire se una funzione sta facendo più di una cosa, è scoprire se riuscite ad estrarre un'altra funzione con un nome che non è semplicemente una riaffermazione della sua implementazione.
 
