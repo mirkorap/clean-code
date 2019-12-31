@@ -102,7 +102,7 @@ Le classi dovrebbero avere un piccolo numero di variabili di istanza. Ognuno dei
 
 ### Curando la coesione si generano tante piccole classi
 
-Il fatto di suddividere le funzioni più grandi in funzioni più piccole genera una proliferazione di classi. Immaginate di avere una funzione grande con dichiarate all'interno tante variabili locali, questa funzione va indubbiamente spezzata in funzioni più piccole le quali necessitano di condividere queste variabili dichiarate localmente. Cosa facciamo? Passiamo queste variabili come argomento? Assolutamente no! Possiamo allora dichiariararle come variabili di istanza. Ben presto questo porterà ad un accumulo di variabili di istanza utilizzate solo da un sottoinsieme di metodi. E' arrivato quindi il momento di suddividere la classe in due o più classi, in modo tale da aumentare la coesione tra i metodi, la classe e le sue variabili di istanza. Vedete quindi come dalla rifattorizzazione di un metodo, siamo passati alla rifattorizzazione dell'intera classe.
+Il fatto di suddividere le funzioni più grandi in funzioni più piccole genera una proliferazione di classi. Immaginate di avere una funzione grande con dichiarate all'interno tante variabili locali, questa funzione va indubbiamente spezzata in funzioni più piccole le quali necessitano di condividere queste variabili dichiarate localmente. Cosa facciamo? Passiamo queste variabili come argomento? Assolutamente no! Possiamo allora dichiariararle come variabili di istanza. Ben presto questo porterà ad un accumulo di variabili di istanza utilizzate solo da un sottoinsieme di metodi. E' arrivato quindi il momento di suddividere la classe in due o più classi, in modo tale da aumentare la coesione tra i metodi, la classe e le sue variabili di istanza. Vedete quindi come dalla rifattorizzazione di un metodo siamo passati alla rifattorizzazione dell'intera classe.
 
 ### Organizzare gli interventi di modifica
 
@@ -118,7 +118,7 @@ class Sql {
 }
 ```
 
-Immaginate che in futuro volessimo aggiungere anche il metodo per gestire l'istruzione `update`. Dovremmo "aprire" la classe e modificarla. Questo però va contro un altro principio [S.O.L.I.D](https://it.wikipedia.org/wiki/SOLID), ovvero l'Open-Closed Principle \(OCP\). Il quale ci dice che le classi dovrebbero essere aperte alle estensioni, ma chiuse alle modifiche. Per aderire a questo principio dobbiamo rifattorizzare la classe in questa maniera
+Immaginate che in futuro volessimo aggiungere anche il metodo per gestire l'istruzione `update`. Dovremmo "aprire" la classe e modificarla. Questo però va contro un altro principio [S.O.L.I.D](https://it.wikipedia.org/wiki/SOLID), ovvero l'Open-Closed Principle \(OCP\). Il quale ci dice che le classi dovrebbero essere aperte alle estensioni, ma chiuse alle modifiche. Per aderire a questo principio dobbiamo rifattorizzare la classe in questa maniera:
 
 ```text
 abstract class Sql {
