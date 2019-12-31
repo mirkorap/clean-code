@@ -16,7 +16,7 @@ Cosa significa "fare una cosa sola"? Prendiamo per esempio questa funzione:
 
 ```text
 public function renderPageWithSetupsAndTeardowns() {
-    if ($this->isTestPage($pageData)) {
+    if ($this->isTestPage($this->pageData)) {
         $this->includeSetupAndTeardown($this->pageData, $this->isSuite);
     }
 
@@ -24,7 +24,11 @@ public function renderPageWithSetupsAndTeardowns() {
 }
 ```
 
-In ordine questa funzione fa tre cose: 1. Determina se è una pagina di test 2. In caso affermativo, include attacchi e chiusure 3. Esegue il rendering della pagina HTML
+In ordine questa funzione fa tre cose:
+
+    * Determina se è una pagina di test
+    * In caso affermativo, include attacchi e chiusure
+    * Esegue il rendering della pagina HTML
 
 Apparentemente questa funzione fa tre cose, ma notare come questi passi si trovano ad un solo livello di astrazione da quello che è il nome della funzione. In generale, una funzione fa una cosa sola quando i passi della funzione si trovano ad un solo livello di astrazione da quello che è il nome scelto per la funzione. Un altro modo per capire se una funzione sta facendo più di una cosa, è scoprire se riuscite ad estrarre un'altra funzione con un nome che non è semplicemente una riaffermazione della sua implementazione.
 
@@ -50,7 +54,7 @@ public function calculatePay(Employee $employee): float {
         case Employee::SALARIED:
             return $this->calculateSalariedPay($employee);
         default:
-        throw new InvalidEmployeeType($employee->getType());
+            throw new InvalidEmployeeType($employee->getType());
     }
 }
 ```
@@ -72,15 +76,15 @@ class EmployeeFactoryImpl implements EmployeeFactory {
 
     public function make(EmployeeRecord $record): Employee {
         switch($record->getType()) {
-        case EmployeeRecord::COMMISSIONED:
-            return new CommissionedEmployee();
-        case EmployeeRecord::HOURLY:
-        return new HourlyEmployee();
-        case EmployeeRecord::SALARIED:
-        return new SalariedEmployee();
-        default:
-        throw new InvalidEmployee($record->getType());
-    }
+            case EmployeeRecord::COMMISSIONED:
+                return new CommissionedEmployee();
+            case EmployeeRecord::HOURLY:
+                return new HourlyEmployee();
+            case EmployeeRecord::SALARIED:
+                return new SalariedEmployee();
+            default:
+                throw new InvalidEmployee($record->getType());
+        }
     }
 }
 ```
@@ -111,7 +115,7 @@ Funzione diadica:
 class Example {
 
     public function writeField(StreamInterface $outputStream, string $name) {
-    // ...
+        // ...
     }
 }
 ```
@@ -124,11 +128,11 @@ class Example {
     private $outputStream;
 
     public function __construct(StreamInterface $outputStream) {
-    $this->outputStream = $outputStream;
+        $this->outputStream = $outputStream;
     }
 
     public function writeField(string $name) {
-    // ...
+        // ...
     }
 }
 ```
@@ -190,7 +194,7 @@ class Page {
     private $html;
 
     public function appendFooter() {
-    // ...
+        // ...
     }
 }
 
@@ -235,9 +239,9 @@ I codici d'errore sono da evitare perché inducono a creare istruzioni `if` anni
 ```text
 if ($this->userRepository->delete($user) === UserRecord::STATUS_OK) {
     if ($this->mailer->send($email) === MailerRecord::STATUS_OK) {
-    print_r('Email inviata con successo.');
+        print_r('Email inviata con successo.');
     } else {
-    print_r('Non è stato possibile inviare l`email.');
+        print_r('Non è stato possibile inviare l`email.');
     }
 } else {
     print_r('Non è stato possibile eliminare l`utente.');
@@ -249,10 +253,10 @@ Diventa:
 ```text
 public function deleteUser(User $user) {
     try {
-    $this->userRepository->delete($user);
-    $this->mailer->send($this->email);
+        $this->userRepository->delete($user);
+        $this->mailer->send($this->email);
     } catch(Exception $e) {
-    print_r($e->getMessage());
+        print_r($e->getMessage());
     }
 }
 ```
@@ -266,9 +270,9 @@ L'esempio sopra diventa:
 ```text
 public function deleteUser(User $user) {
     try {
-    $this->deleteUserAndSendEmail($user);
+        $this->deleteUserAndSendEmail($user);
     } catch(Exception $e) {
-    print_r($e->getMessage());
+        print_r($e->getMessage());
     }
 }
 
@@ -280,5 +284,5 @@ private function deleteUserAndSendEmail(User $user) {
 
 ### Il principio DRY
 
-Seguire il principio DRY \(_Don't Repeat Yourself_\) per evitare duplicazioni nel codice.
+Seguite il principio DRY \(_Don't Repeat Yourself_\) per evitare duplicazioni nel codice.
 
