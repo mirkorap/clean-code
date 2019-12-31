@@ -73,6 +73,10 @@ interface Shape {
 
 class Square implements Shape {
     private $side;
+    
+    public function __construct(double $side) {
+        $this->side = $side;
+    }
 
     public function area(): double {
         return pow($this->side, 2);
@@ -82,6 +86,11 @@ class Square implements Shape {
 class Rectangle implements Shape {
     private $height;
     private $width;
+    
+    public function __construct(double $height, double $width) {
+        $this->height = $height;
+        $this->width = $width;
+    }
 
     public function area(): double {
         return $this->height * $this->width;
@@ -89,9 +98,12 @@ class Rectangle implements Shape {
 }
 
 class Circle implements Shape {
-    private $center;
-    private $radius;
     private const PI = 3.141592653589793;
+    private $radius;
+    
+    public function __construct(double $radius) {
+        $this->radius = $radius;
+    }
 
     public function area(): double {
         return pow($this->radius, 2) * self::PI;
@@ -105,7 +117,7 @@ Da questi due esempi è possibile notare la differenza sostanziale tra oggetti e
 
 ### La legge di Demetra
 
-La _legge di Demetra_ dice che un modulo non dovrebbe conoscere i dettagli degli oggetti che manipola. Significa che un oggetto non dovrebbe mostrare la propria struttura interna tramite i metodi di accesso, perché ciò vorrebbe dire esporre, e non nascondere, la propria struttura interna. Nello specifico la legge di Demetra dice che un metodo _f_ di una classe _C_ dovrebbe richiamare solo i metodi di:
+La _legge di Demetra_ dice che un modulo non dovrebbe conoscere i dettagli degli oggetti che manipola. Significa che un oggetto non dovrebbe mostrare la propria struttura interna tramite i metodi di accesso, perché ciò vorrebbe dire esporre e non nascondere la propria struttura interna. Nello specifico la legge di Demetra dice che un metodo _f_ di una classe _C_ dovrebbe richiamare solo i metodi di:
 
 * C
 * un oggetto creato da f
@@ -120,7 +132,7 @@ $outputDir = $ctxt->getOptions()->getScratchDir()->getAbsolutePath();
 
 ### Relitti ferroviari
 
-Questo genere di codice viene chiamato "relitto ferroviario" perché ha l'aspetto di un ammasso di coppie di vagoni e generalmente va evitato. Ritornando a noi, il codice sopra riportato, viola la legge di Demetra? Ciò dipende dal fatto che _ctxt_, _options_, e _scratchDir_ siano oggetti o strutture. Se sono oggetti, allora la loro struttura interna dovrebbe essere nascosta, pertanto viola la legge di Demetra. Se sono strutture, e quindi non hanno funzioni che fanno qualcosa di significativo, è normale che espongono i propri dati interni, pertanto **non** viola la legge di Demetra. L'utilizzo dei metodi di accesso confonde la situazione.
+Questo genere di codice viene chiamato "relitto ferroviario" perché ha l'aspetto di un ammasso di coppie di vagoni e generalmente va evitato. Ritornando a noi, il codice sopra riportato viola la legge di Demetra? Ciò dipende dal fatto che _ctxt_, _options_, e _scratchDir_ siano oggetti o strutture. Se sono oggetti, allora la loro struttura interna dovrebbe essere nascosta, pertanto viola la legge di Demetra. Se sono strutture, e quindi non hanno funzioni che fanno qualcosa di significativo, è normale che espongono i propri dati interni, pertanto **non** viola la legge di Demetra. L'utilizzo dei metodi di accesso confonde la situazione.
 
 ### Ibridi
 
