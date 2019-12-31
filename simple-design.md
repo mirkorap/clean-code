@@ -72,7 +72,7 @@ La maggior parte del costo di un progetto software è la sua manutenzione a lung
 Possiamo curare l'espressività nei seguenti modi:
 
 * Scegliendo buoni nomi
-* Mantenendo piccole le funzioni e le classi. Ciò faciliterà anche la denominazione
+* Mantenendo piccole le funzioni e le classi
 * Usando sistemi di denominazione standard. Per esempio se usiamo i pattern **Command** o **Visitor**, possiamo aggiungere questi nomi al nome della classe
 * Scrivere unit test. Un obiettivo importante dei test è quello di fungere da documentazione basata sull'esempio
 
