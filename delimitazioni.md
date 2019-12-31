@@ -4,7 +4,7 @@ Spesso abbiamo la necessità di integrare nel nostro codice pacchetti e/o librer
 
 ### Usare codice esterno
 
-Chi fornisce il package o il framework punta a un'ampia applicabilità. Chi utilizza il package, invece, desidera avere delle interfacce che siano calibrate sulle proprie specifiche esigenze. Il codice di un package di terze parti è soggetto a continui cambiamenti che vanno incontro alle esigenze di un'ampia utenza. Questi cambiamenti, talvolta, potrebbero essere problematici per la nostra applicazione e potrebbero persino romperla. Perciò dobbiamo "salvaguardare" il nostro codice construendo delle interfacce di cui abbiamo il pieno controllo.
+Chi fornisce il package o il framework punta a un'ampia applicabilità. Chi utilizza il package, invece, desidera avere delle interfacce che siano calibrate sulle proprie specifiche esigenze. Il codice di un package di terze parti è soggetto a continui cambiamenti che vanno incontro alle esigenze di un'ampia utenza. Questi cambiamenti, talvolta, potrebbero essere problematici per la nostra applicazione e potrebbero persino romperla. Perciò dobbiamo "salvaguardare" il nostro codice costruendo delle interfacce di cui abbiamo il pieno controllo.
 
 Interfaccia di cui **non** abbiamo il pieno controllo:
 
