@@ -112,7 +112,7 @@ I tipi di commenti che vedrete nelle prossime righe sono tutti esempi di comment
 
 ### Commenti enigmatici
 
-I commenti devono chiarire i dubbi del programmatore, non aggiungerne degli altri. Evitare commenti che possono essere interpretati soltanto da chi li scrive.
+I commenti devono chiarire i dubbi del programmatore, non aggiungerne degli altri. Evitate commenti che possono essere interpretati soltanto da chi li scrive.
 
 ### Commenti ridondanti
 
