@@ -18,11 +18,11 @@ Il codice dei test è importante quanto il codice di produzione. Avere dei test 
 
 ### I test garantiscono le "...bilità"
 
-Gli unit test garantiscono la flessibilità, manutenibilità e riutilizzabilità del nostro codice. Se abbiamo dei test scritti bene, non avremo mai paura di modificare il nostro codice! Maggiore è la copertura dei test, minora è la paura. Se i test sono scadenti, ciò ci indurrà a non modificare e migliorare il nostro codice. Peggiori sono i test e peggiore diventà il nostro codice.
+Gli unit test garantiscono la flessibilità, manutenibilità e riutilizzabilità del nostro codice. Se abbiamo dei test scritti bene, non avremo mai paura di modificare il nostro codice! Maggiore è la copertura dei test, minora è la paura. Se i test sono scadenti, ciò ci indurrà a non modificare e migliorare il nostro codice. Peggiori sono i test e peggiore diventerà il nostro codice.
 
 ### Un doppio standard
 
-Il codice di test deve sottostare ad un insieme di standard progettuali differente rispetto al codice di produzione. Deve essere chiaro, semplice ed espressivo, ma non deve essere altrettanto efficiente come il codice di produzione. Questo perché il codice di test viene eseguito in un ambiente per l'appunto di test. Dove le risorse di memoria RAM e CPU sono differenti rispetto all'ambiente di produzione.
+Il codice di test deve sottostare ad un insieme di standard progettuali differente rispetto al codice di produzione. Deve essere chiaro, semplice ed espressivo, ma non deve essere altrettanto efficiente come il codice di produzione. Questo perché il codice di test viene eseguito in un ambiente per l'appunto di test, dove le risorse di memoria RAM e CPU sono differenti rispetto all'ambiente di produzione.
 
 ### Una sola richiesta per test
 
