@@ -25,7 +25,6 @@ public function renderPageWithSetupsAndTeardowns() {
 ```
 
 In ordine questa funzione fa tre cose:
-
     * Determina se è una pagina di test
     * In caso affermativo, include attacchi e chiusure
     * Esegue il rendering della pagina HTML
