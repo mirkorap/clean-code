@@ -108,7 +108,7 @@ public function getProductsAsArray(): array {
 
 ### Cattivi commenti
 
-I tipi di commenti che vedrete nelle prossime righe, sono tutti esempi di commenti utilizzati in maniera errata.
+I tipi di commenti che vedrete nelle prossime righe sono tutti esempi di commenti utilizzati in maniera errata.
 
 ### Commenti enigmatici
 
