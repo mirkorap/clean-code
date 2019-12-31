@@ -30,7 +30,7 @@ I nomi non devono essere ambigui e disinformativi. Se uso `$accountList` e non s
 
 ## Adottate distinzioni sensate
 
-Usare due nomi uguali che si distinguono solo per un valore posto alla fine del nome \(Es. `$customer1` e `$customer2`\) non è sensato. Piuttosto cercare di dare un nome che ben distingua le due cose \(Es. `$buyer` e `$seller`\). Anche nel nominare le classi si commette questo errore. Pensate a quante volte vi è capitato di trovare due classi che si chiamavano rispettivamente `Customer` e `CustomerData`. Qual è la differenza tra le due? Ecco perché è importante dare nomi sensati che ben distinguano le cose.
+Usare due nomi uguali che si distinguono solo per un valore posto alla fine del nome \(Es. `$customer1` e `$customer2`\) non è sensato. Piuttosto cercate di dare un nome che ben distingua le due cose \(Es. `$buyer` e `$seller`\). Anche nel nominare le classi si commette questo errore. Pensate a quante volte vi è capitato di trovare due classi che si chiamavano rispettivamente `Customer` e `CustomerData`. Qual è la differenza tra le due? Ecco perché è importante dare nomi sensati che ben distinguano le cose.
 
 ## Usate nomi pronunciabili
 
