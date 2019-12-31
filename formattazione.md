@@ -52,7 +52,7 @@ class ReporterConfig {
 
 ### Dichiarazione verticale
 
-Funzioni o variabili che sono strettamente correlate tra di loro, dovrebbero trovarsi vicine, così da evitare il _"salto"_ tra una funzione ed un'altra.
+Funzioni o variabili che sono strettamente correlate tra di loro dovrebbero trovarsi vicine, così da evitare il _"salto"_ tra una funzione ed un'altra.
 
 ### Dichiarazioni di variabili
 
@@ -92,7 +92,7 @@ Per formattazione orizzontale si intendono tutte quelle regole che vengono appli
 
 ### Quanto può essere lunga una riga
 
-In genere una riga in un file di codice sorgente non deve superare gli 80 caratteri.
+In genere una riga in un file di codice sorgente non dovrebbe superare gli 80 caratteri.
 
 ### Allineamento orizzontale
 
