@@ -261,7 +261,7 @@ public function deleteUser(User $user) {
 }
 ```
 
-### Estraete i block try / catch
+### Estraete i blocchi try / catch
 
 I blocchi try / catch sono brutti da vedere e spesso creano confusione. Pertanto è meglio estrarli e inserirli all'interno di funzioni a sé stanti.
 
