@@ -141,7 +141,7 @@ Questo talvolta porta ad avere degli ibridi: per metà oggetti e per metà strut
 
 ### Nascondere la struttura
 
-E se _ctxt_, _options_ e _scratchDir_ fossero oggetti? Come faccio a ricavarmi il percorso assoluto di scratch? Se _ctxt_ è un oggetto, dovremmo chiedergli di **fare qualcosa** e non chiedergli i suoi dettagli interni. Continuando con il codice vediamo a cosa serve _outputDir_:
+E se _ctxt_, _options_ e _scratchDir_ fossero oggetti? Come faccio a ricavarmi il percorso assoluto di scratch? Se _ctxt_ fosse un oggetto, dovremmo chiedergli di **fare qualcosa** e non chiedergli i suoi dettagli interni. Continuando con il codice vediamo a cosa serve _outputDir_:
 
 ```text
 $outFilename = $outputDir . '/' . str_replace('.', '/', $className) . '.class';
