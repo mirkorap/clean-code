@@ -62,7 +62,7 @@ I nomi codificati sono difficili da ricordare e capire, soprattutto per chi è s
 
 ## Suffissi
 
-E' inutile aggiungere ai nomi di variabili, funzioni e interfacce dei suffissi. I moderni IDE, attraverso il Syntax Highlighting o tramite l'utilizzo di apposite icone, ci fornisco già delle informazioni che rendono inutile l'utilizzo di suffissi.
+E' inutile aggiungere ai nomi di variabili, funzioni e interfacce dei suffissi. I moderni IDE, attraverso il Syntax Highlighting o tramite l'utilizzo di apposite icone, ci forniscono già delle informazioni che rendono inutile l'utilizzo di suffissi.
 
 Nome di interfaccia da evitare:
 
@@ -78,11 +78,11 @@ interface ShapeFactory
 
 ## Nomi di classi
 
-Il nome di una classe non deve essere un verbo. Inoltre evitate parole come `Manager`, `Processor`, `Data` o `Info` che spesso vengono utilizzate solo per distinguere i nomi e non aggiungono altre informazioni su ciò che fa la classe.
+Il nome di una classe non dovrebbe essere un verbo. Inoltre evitate parole come `Manager`, `Processor`, `Data` o `Info` che spesso vengono utilizzate solo per distinguere i nomi e non aggiungono altre informazioni su ciò che fa la classe.
 
 ## Nomi di metodi
 
-I nomi dei metodi devono contenere un verbo o una frase verbale, come `sendEmail`, `save`, `deleteCustomer`. Anche per i costruttori spesso è utile adottare un nome \([Named Constructor](http://blog.conorsmith.ie/named-constructors-in-php)\) per rendere più chiaro quest'ultimo.
+I nomi dei metodi dovrebbero contenere un verbo o una frase verbale, come `sendEmail`, `save`, `deleteCustomer`. Anche per i costruttori spesso è utile adottare un nome \([Named Constructor](http://blog.conorsmith.ie/named-constructors-in-php)\) per rendere più chiaro quest'ultimo.
 
 Costruttore poco chiaro:
 
