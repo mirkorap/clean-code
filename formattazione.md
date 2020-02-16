@@ -12,7 +12,7 @@ In genere un file di codice sorgente non deve superare le 500 righe. Mediamente 
 
 ### La metafora della rivista
 
-Il codice sorgente deve essere fruibile come se legessimo una rivista. In alto, il nome della classe, ci aiuta a capire se siamo nel modulo di nostro interesse, subito dopo troviamo le dipendenze e le proprietà della classe, continuando abbiamo i metodi più generici con un **basso** livello di dettaglio e, infine, in fondo troviamo i metodi con un **alto** livello di dettaglio.
+Il codice sorgente deve essere fruibile come se leggessimo una rivista. In alto, il nome della classe, ci aiuta a capire se siamo nel modulo di nostro interesse, subito dopo troviamo le dipendenze e le proprietà della classe, continuando abbiamo i metodi più generici con un **basso** livello di dettaglio e, infine, in fondo troviamo i metodi con un **alto** livello di dettaglio.
 
 ### Spaziatura verticale fra i concetti
 
